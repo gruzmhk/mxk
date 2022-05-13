@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer')
 
 /* GET home page. */
 
-router.post('/', async(req,res)=>{
+router.post('/12', async(req,res)=>{
     const {phone} = req.body
     let transporter = nodemailer.createTransport({
       service: 'gmail',
